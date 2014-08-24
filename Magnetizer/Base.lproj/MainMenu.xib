@@ -14,6 +14,7 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Magnetizer" customModuleProvider="target">
             <connections>
                 <outlet property="menu" destination="Vnh-PW-UdI" id="Yzg-EC-89f"/>
+                <outlet property="prefWindow" destination="ltA-vG-QZl" id="XRe-l2-7EU"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -25,13 +26,29 @@
                         <action selector="openRemoteGUI:" target="Voe-Tx-rLC" id="Me6-15-cBc"/>
                     </connections>
                 </menuItem>
+                <menuItem isSeparatorItem="YES" id="eUn-9X-0GY"/>
+                <menuItem title="Preferences…" keyEquivalent="," id="5D2-gc-b3g">
+                    <connections>
+                        <action selector="openPrefDialog:" target="Voe-Tx-rLC" id="WWA-JO-4Do"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="Quit Magnetizer" keyEquivalent="q" id="SqX-fp-yXU">
                     <connections>
                         <action selector="quitApplication:" target="Voe-Tx-rLC" id="5H9-uy-j4W"/>
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-292.5" y="268.5"/>
+            <point key="canvasLocation" x="-469" y="-11.5"/>
         </menu>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="ltA-vG-QZl">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="1000" y="735" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <view key="contentView" hidden="YES" id="qRc-TS-1fC">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <point key="canvasLocation" x="-325" y="250"/>
+        </window>
     </objects>
 </document>

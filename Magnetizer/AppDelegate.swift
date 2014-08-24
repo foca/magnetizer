@@ -16,6 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBOutlet weak var menu: NSMenu!
+    @IBOutlet weak var prefWindow: NSWindow!
 
     let statusBar = NSStatusBar.systemStatusBar()
     var statusItem: NSStatusItem?
@@ -48,6 +49,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBAction func openRemoteGUI(AnyObject) {
         NSWorkspace.sharedWorkspace().openURL(transmissionURL)
+    }
+
+    @IBAction func openPrefDialog(AnyObject) {
+        prefWindow.makeKeyAndOrderFront(self)
+        NSApp.activateIgnoringOtherApps(true)
     }
 
     @IBAction func quitApplication(AnyObject) {
