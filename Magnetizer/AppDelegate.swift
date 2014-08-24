@@ -19,8 +19,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem = statusBar.statusItemWithLength(-1)
         if let item = statusItem {
             item.menu = menu
-            item.title = "Magnetizer"
             item.highlightMode = true
+            item.image = NSImage(named: "magnet")
+            item.alternateImage = NSImage(named: "magnet-alt")
         }
     }
     
