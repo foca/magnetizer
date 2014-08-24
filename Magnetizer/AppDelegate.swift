@@ -11,6 +11,9 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     let transmissionURL = NSURL.URLWithString("http://transmission.local/")
+    var torrentManager: TorrentManager {
+        return TorrentManager(transmissionURL)
+    }
 
     @IBOutlet weak var menu: NSMenu!
 
@@ -37,8 +40,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func handleURLEvent(event: NSAppleEventDescriptor, withReplyEvent: NSAppleEventDescriptor) {
-        let url = NSURL.URLWithString(event.paramDescriptorForKeyword(AEKeyword(keyDirectObject))!.stringValue!)
-        NSLog(url.description)
+        let url = NSURL.URLWithString(
+            event.paramDescriptorForKeyword(AEKeyword(keyDirectObject))!.stringValue!
+        )
+        torrentManager.addTorrent(url)
     }
 
     @IBAction func openRemoteGUI(AnyObject) {
