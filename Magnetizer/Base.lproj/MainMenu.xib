@@ -14,19 +14,24 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Magnetizer" customModuleProvider="target">
             <connections>
                 <outlet property="menu" destination="Vnh-PW-UdI" id="Yzg-EC-89f"/>
-                <outlet property="statusMenu" destination="Vnh-PW-UdI" id="K1a-qn-eln"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="Vnh-PW-UdI">
             <items>
-                <menuItem title="Quit Magnetizer" keyEquivalent="q" id="ub8-tP-aoY">
+                <menuItem title="Open Transmission" id="ub8-tP-aoY">
+                    <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="quitApplication:" target="Voe-Tx-rLC" id="8Vk-Hf-ke2"/>
+                        <action selector="openRemoteGUI:" target="Voe-Tx-rLC" id="Me6-15-cBc"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit Magnetizer" keyEquivalent="q" id="SqX-fp-yXU">
+                    <connections>
+                        <action selector="quitApplication:" target="Voe-Tx-rLC" id="5H9-uy-j4W"/>
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-292" y="268.5"/>
+            <point key="canvasLocation" x="-292.5" y="268.5"/>
         </menu>
     </objects>
 </document>

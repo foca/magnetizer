@@ -10,6 +10,8 @@ import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    let transmissionURL = NSURL.URLWithString("http://transmission.local/")
+
     @IBOutlet weak var menu: NSMenu!
 
     let statusBar = NSStatusBar.systemStatusBar()
@@ -37,6 +39,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func handleURLEvent(event: NSAppleEventDescriptor, withReplyEvent: NSAppleEventDescriptor) {
         let url = NSURL.URLWithString(event.paramDescriptorForKeyword(AEKeyword(keyDirectObject))!.stringValue!)
         NSLog(url.description)
+    }
+
+    @IBAction func openRemoteGUI(AnyObject) {
+        NSWorkspace.sharedWorkspace().openURL(transmissionURL)
     }
 
     @IBAction func quitApplication(AnyObject) {
