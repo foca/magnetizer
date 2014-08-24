@@ -12,7 +12,6 @@
 		CC03D02F19A93EF300B29122 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC03D02E19A93EF300B29122 /* Images.xcassets */; };
 		CC03D03219A93EF300B29122 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC03D03019A93EF300B29122 /* MainMenu.xib */; };
 		CC03D03E19A93EF300B29122 /* MagnetizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03D03D19A93EF300B29122 /* MagnetizerTests.swift */; };
-		CC03D04C19A9C12000B29122 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = CC03D04B19A9C12000B29122 /* TODO */; };
 		CC47C94719A9D3B600027E02 /* TorrentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC47C94619A9D3B600027E02 /* TorrentManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		CC03D03719A93EF300B29122 /* MagnetizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC03D03C19A93EF300B29122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC03D03D19A93EF300B29122 /* MagnetizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetizerTests.swift; sourceTree = "<group>"; };
-		CC03D04B19A9C12000B29122 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		CC47C94619A9D3B600027E02 /* TorrentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TorrentManager.swift; path = src/TorrentManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +59,6 @@
 		CC03D01C19A93EF300B29122 = {
 			isa = PBXGroup;
 			children = (
-				CC03D04B19A9C12000B29122 /* TODO */,
 				CC03D02719A93EF300B29122 /* Magnetizer */,
 				CC03D03A19A93EF300B29122 /* MagnetizerTests */,
 				CC03D02619A93EF300B29122 /* Products */,
@@ -203,7 +200,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC03D04C19A9C12000B29122 /* TODO in Resources */,
 				CC03D02F19A93EF300B29122 /* Images.xcassets in Resources */,
 				CC03D03219A93EF300B29122 /* MainMenu.xib in Resources */,
 			);
