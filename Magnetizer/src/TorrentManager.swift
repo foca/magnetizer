@@ -9,29 +9,54 @@
 import Foundation
 
 class TorrentManager {
-    private let host: NSURL
-    private let username: String?
-    private let password: String?
-
-    init(host: NSURL, rpcPath: String, username: String?, password: String?) {
-        self.host = host.URLByAppendingPathComponent(rpcPath)
-        self.username = username
-        self.password = password
+    private var hostname: String? {
+        return NSUserDefaults.standardUserDefaults().stringForKey("TransmissionHost")
+    }
+    private var rpcPath:  String? {
+        return NSUserDefaults.standardUserDefaults().stringForKey("TransmissionRPCPath")
+    }
+    private var username: String? {
+        return NSUserDefaults.standardUserDefaults().stringForKey("TransmissionUsername")
+    }
+    private var password: String? {
+        return NSUserDefaults.standardUserDefaults().stringForKey("TransmissionPassword")
     }
 
-    convenience init() {
-        let preferences = NSUserDefaults.standardUserDefaults()
-        self.init(
-            host: NSURL.URLWithString(preferences.stringForKey("TransmissionHost")!),
-            rpcPath: preferences.stringForKey("TransmissionRPCPath")!,
-            username: preferences.stringForKey("TransmissionUsername"),
-            password: preferences.stringForKey("TransmissionPassword")
-        )
+    private var host: NSURL? {
+        if let host = hostname {
+            var url = NSURL.URLWithString(host)
+            if let path = rpcPath {
+                return url.URLByAppendingPathComponent(path)
+            }
+        }
+        return nil
     }
 
-    func addTorrent(magnetURL: NSURL) {
-        NSLog(host.description)
-        NSLog(magnetURL.description)
-        NSLog("%@, %@", username!, password!)
+    // Checks whether the service is available or not by ensuring that we have
+    // defined a host for the RPC calls.
+    func available() -> Bool {
+        if let url = host {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    // Returns the URL of the web GUI, if available.
+    func guiURL() -> NSURL? {
+        if let url = hostname {
+            return NSURL.URLWithString(url);
+        }
+        return nil
+    }
+
+    // Adds a new torrent to the remote Transmission daemon, if the service is
+    // available.
+    func add(magnetURL: NSURL) {
+        if available() {
+            NSLog(host!.description)
+            NSLog(magnetURL.description)
+            NSLog("%@, %@", username!, password!)
+        }
     }
 }

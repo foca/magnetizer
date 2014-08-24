@@ -10,9 +10,7 @@ import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var torrentManager : TorrentManager {
-        return TorrentManager()
-    }
+    let torrents = TorrentManager()
 
     @IBOutlet weak var menu: NSMenu!
     @IBOutlet weak var prefWindow: NSWindow!
@@ -30,10 +28,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
+    func validateUserInterfaceItem(anItem: NSValidatedUserInterfaceItem!) -> Bool {
+        if anItem.action() == "openRemoteGUI:" {
+            return torrents.available()
+        }
+        return true
+    }
+
     @IBAction func openRemoteGUI(AnyObject) {
-        if let savedURL = NSUserDefaults.standardUserDefaults().stringForKey("TransmissionHost") {
-            let transmissionURL: NSURL = NSURL.URLWithString(savedURL)
-            NSWorkspace.sharedWorkspace().openURL(transmissionURL)
+        if let hostURL = torrents.guiURL() {
+            NSWorkspace.sharedWorkspace().openURL(hostURL)
         }
     }
 
@@ -65,6 +69,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let url = NSURL.URLWithString(
             event.paramDescriptorForKeyword(AEKeyword(keyDirectObject))!.stringValue!
         )
-        torrentManager.addTorrent(url)
+        torrents.add(url)
     }
 }
