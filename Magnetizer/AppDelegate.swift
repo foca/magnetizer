@@ -9,12 +9,12 @@
 import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-                            
+
     @IBOutlet weak var menu: NSMenu!
-    
+
     let statusBar = NSStatusBar.systemStatusBar()
     var statusItem: NSStatusItem?
-    
+
     func applicationWillFinishLaunching(notification: NSNotification!) {
         let eventManager = NSAppleEventManager.sharedAppleEventManager()
         eventManager.setEventHandler(self,
