@@ -13,6 +13,7 @@
 		CC03D03219A93EF300B29122 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC03D03019A93EF300B29122 /* MainMenu.xib */; };
 		CC03D03E19A93EF300B29122 /* MagnetizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03D03D19A93EF300B29122 /* MagnetizerTests.swift */; };
 		CC47C94719A9D3B600027E02 /* TorrentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC47C94619A9D3B600027E02 /* TorrentManager.swift */; };
+		CC47CA6D19AA6BCD00027E02 /* DefaultPrefs.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC47CA6C19AA6BCD00027E02 /* DefaultPrefs.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CC03D03C19A93EF300B29122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC03D03D19A93EF300B29122 /* MagnetizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetizerTests.swift; sourceTree = "<group>"; };
 		CC47C94619A9D3B600027E02 /* TorrentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TorrentManager.swift; path = src/TorrentManager.swift; sourceTree = "<group>"; };
+		CC47CA6C19AA6BCD00027E02 /* DefaultPrefs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultPrefs.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				CC03D02919A93EF300B29122 /* Info.plist */,
 				CC03D02A19A93EF300B29122 /* main.swift */,
+				CC47CA6C19AA6BCD00027E02 /* DefaultPrefs.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC03D02F19A93EF300B29122 /* Images.xcassets in Resources */,
+				CC47CA6D19AA6BCD00027E02 /* DefaultPrefs.plist in Resources */,
 				CC03D03219A93EF300B29122 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

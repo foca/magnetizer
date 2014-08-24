@@ -10,9 +10,8 @@ import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    let transmissionURL = NSURL.URLWithString("http://transmission.local/")
-    var torrentManager: TorrentManager {
-        return TorrentManager(transmissionURL)
+    var torrentManager : TorrentManager {
+        return TorrentManager()
     }
 
     @IBOutlet weak var menu: NSMenu!
@@ -32,7 +31,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func openRemoteGUI(AnyObject) {
-        NSWorkspace.sharedWorkspace().openURL(transmissionURL)
+        if let savedURL = NSUserDefaults.standardUserDefaults().stringForKey("TransmissionHost") {
+            let transmissionURL: NSURL = NSURL.URLWithString(savedURL)
+            NSWorkspace.sharedWorkspace().openURL(transmissionURL)
+        }
     }
 
     @IBAction func openPrefDialog(AnyObject) {
@@ -45,12 +47,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillFinishLaunching(notification: NSNotification!) {
+        // Register ourselves to handle URL open events
         let eventManager = NSAppleEventManager.sharedAppleEventManager()
         eventManager.setEventHandler(self,
             andSelector: "handleURLEvent:withReplyEvent:",
             forEventClass: AEEventClass(kInternetEventClass),
             andEventID: AEEventID(kAEGetURL)
         )
+
+        // Set up default values for the user preferences
+        let prefsFile = NSBundle.mainBundle().pathForResource("DefaultPrefs", ofType: "plist")!
+        let defaultPreferences = NSDictionary(contentsOfFile: prefsFile)
+        NSUserDefaults.standardUserDefaults().registerDefaults(defaultPreferences)
     }
 
     func handleURLEvent(event: NSAppleEventDescriptor, withReplyEvent: NSAppleEventDescriptor) {

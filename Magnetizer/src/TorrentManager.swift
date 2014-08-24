@@ -9,14 +9,29 @@
 import Foundation
 
 class TorrentManager {
-    private var transmissionHost: NSURL
+    private let host: NSURL
+    private let username: String?
+    private let password: String?
 
-    init (_ transmissionHost: NSURL) {
-        self.transmissionHost = transmissionHost
+    init(host: NSURL, rpcPath: String, username: String?, password: String?) {
+        self.host = host.URLByAppendingPathComponent(rpcPath)
+        self.username = username
+        self.password = password
+    }
+
+    convenience init() {
+        let preferences = NSUserDefaults.standardUserDefaults()
+        self.init(
+            host: NSURL.URLWithString(preferences.stringForKey("TransmissionHost")!),
+            rpcPath: preferences.stringForKey("TransmissionRPCPath")!,
+            username: preferences.stringForKey("TransmissionUsername"),
+            password: preferences.stringForKey("TransmissionPassword")
+        )
     }
 
     func addTorrent(magnetURL: NSURL) {
-        NSLog(transmissionHost.description)
+        NSLog(host.description)
         NSLog(magnetURL.description)
+        NSLog("%@, %@", username!, password!)
     }
 }
