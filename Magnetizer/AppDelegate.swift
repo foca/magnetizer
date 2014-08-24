@@ -39,7 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSLog(url.description)
     }
 
-    @IBAction func itemClicked(AnyObject) {
-        NSLog("Item clicked!")
+    @IBAction func quitApplication(AnyObject) {
+        NSApplication.sharedApplication().terminate(self)
     }
 }

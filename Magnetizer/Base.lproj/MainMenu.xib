@@ -20,10 +20,9 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="Vnh-PW-UdI">
             <items>
-                <menuItem title="Quit Magnetizer" id="ub8-tP-aoY">
-                    <modifierMask key="keyEquivalentModifierMask"/>
+                <menuItem title="Quit Magnetizer" keyEquivalent="q" id="ub8-tP-aoY">
                     <connections>
-                        <action selector="itemClicked:" target="Voe-Tx-rLC" id="t6x-jJ-eHf"/>
+                        <action selector="quitApplication:" target="Voe-Tx-rLC" id="8Vk-Hf-ke2"/>
                     </connections>
                 </menuItem>
             </items>
