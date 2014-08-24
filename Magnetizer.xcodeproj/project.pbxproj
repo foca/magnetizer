@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC03D02B19A93EF300B29122 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03D02A19A93EF300B29122 /* main.swift */; };
+		CC03D02D19A93EF300B29122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03D02C19A93EF300B29122 /* AppDelegate.swift */; };
+		CC03D02F19A93EF300B29122 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC03D02E19A93EF300B29122 /* Images.xcassets */; };
+		CC03D03219A93EF300B29122 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC03D03019A93EF300B29122 /* MainMenu.xib */; };
+		CC03D03E19A93EF300B29122 /* MagnetizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03D03D19A93EF300B29122 /* MagnetizerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC03D03819A93EF300B29122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC03D01D19A93EF300B29122 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC03D02419A93EF300B29122;
+			remoteInfo = Magnetizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC03D02519A93EF300B29122 /* Magnetizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magnetizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC03D02919A93EF300B29122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC03D02A19A93EF300B29122 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CC03D02C19A93EF300B29122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC03D02E19A93EF300B29122 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CC03D03119A93EF300B29122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CC03D03719A93EF300B29122 /* MagnetizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC03D03C19A93EF300B29122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC03D03D19A93EF300B29122 /* MagnetizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetizerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC03D02219A93EF300B29122 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC03D03419A93EF300B29122 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC03D01C19A93EF300B29122 = {
+			isa = PBXGroup;
+			children = (
+				CC03D02719A93EF300B29122 /* Magnetizer */,
+				CC03D03A19A93EF300B29122 /* MagnetizerTests */,
+				CC03D02619A93EF300B29122 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC03D02619A93EF300B29122 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC03D02519A93EF300B29122 /* Magnetizer.app */,
+				CC03D03719A93EF300B29122 /* MagnetizerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC03D02719A93EF300B29122 /* Magnetizer */ = {
+			isa = PBXGroup;
+			children = (
+				CC03D02C19A93EF300B29122 /* AppDelegate.swift */,
+				CC03D02E19A93EF300B29122 /* Images.xcassets */,
+				CC03D03019A93EF300B29122 /* MainMenu.xib */,
+				CC03D02819A93EF300B29122 /* Supporting Files */,
+			);
+			path = Magnetizer;
+			sourceTree = "<group>";
+		};
+		CC03D02819A93EF300B29122 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC03D02919A93EF300B29122 /* Info.plist */,
+				CC03D02A19A93EF300B29122 /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC03D03A19A93EF300B29122 /* MagnetizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC03D03D19A93EF300B29122 /* MagnetizerTests.swift */,
+				CC03D03B19A93EF300B29122 /* Supporting Files */,
+			);
+			path = MagnetizerTests;
+			sourceTree = "<group>";
+		};
+		CC03D03B19A93EF300B29122 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC03D03C19A93EF300B29122 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC03D02419A93EF300B29122 /* Magnetizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC03D04119A93EF300B29122 /* Build configuration list for PBXNativeTarget "Magnetizer" */;
+			buildPhases = (
+				CC03D02119A93EF300B29122 /* Sources */,
+				CC03D02219A93EF300B29122 /* Frameworks */,
+				CC03D02319A93EF300B29122 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Magnetizer;
+			productName = Magnetizer;
+			productReference = CC03D02519A93EF300B29122 /* Magnetizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC03D03619A93EF300B29122 /* MagnetizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC03D04419A93EF300B29122 /* Build configuration list for PBXNativeTarget "MagnetizerTests" */;
+			buildPhases = (
+				CC03D03319A93EF300B29122 /* Sources */,
+				CC03D03419A93EF300B29122 /* Frameworks */,
+				CC03D03519A93EF300B29122 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC03D03919A93EF300B29122 /* PBXTargetDependency */,
+			);
+			name = MagnetizerTests;
+			productName = MagnetizerTests;
+			productReference = CC03D03719A93EF300B29122 /* MagnetizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC03D01D19A93EF300B29122 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Nicolas Sanguinetti";
+				TargetAttributes = {
+					CC03D02419A93EF300B29122 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					CC03D03619A93EF300B29122 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = CC03D02419A93EF300B29122;
+					};
+				};
+			};
+			buildConfigurationList = CC03D02019A93EF300B29122 /* Build configuration list for PBXProject "Magnetizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC03D01C19A93EF300B29122;
+			productRefGroup = CC03D02619A93EF300B29122 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC03D02419A93EF300B29122 /* Magnetizer */,
+				CC03D03619A93EF300B29122 /* MagnetizerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC03D02319A93EF300B29122 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC03D02F19A93EF300B29122 /* Images.xcassets in Resources */,
+				CC03D03219A93EF300B29122 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC03D03519A93EF300B29122 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC03D02119A93EF300B29122 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC03D02D19A93EF300B29122 /* AppDelegate.swift in Sources */,
+				CC03D02B19A93EF300B29122 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC03D03319A93EF300B29122 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC03D03E19A93EF300B29122 /* MagnetizerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC03D03919A93EF300B29122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC03D02419A93EF300B29122 /* Magnetizer */;
+			targetProxy = CC03D03819A93EF300B29122 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC03D03019A93EF300B29122 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC03D03119A93EF300B29122 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC03D03F19A93EF300B29122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC03D04019A93EF300B29122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CC03D04219A93EF300B29122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Magnetizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC03D04319A93EF300B29122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Magnetizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC03D04519A93EF300B29122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MagnetizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magnetizer.app/Contents/MacOS/Magnetizer";
+			};
+			name = Debug;
+		};
+		CC03D04619A93EF300B29122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MagnetizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magnetizer.app/Contents/MacOS/Magnetizer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC03D02019A93EF300B29122 /* Build configuration list for PBXProject "Magnetizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC03D03F19A93EF300B29122 /* Debug */,
+				CC03D04019A93EF300B29122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC03D04119A93EF300B29122 /* Build configuration list for PBXNativeTarget "Magnetizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC03D04219A93EF300B29122 /* Debug */,
+				CC03D04319A93EF300B29122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC03D04419A93EF300B29122 /* Build configuration list for PBXNativeTarget "MagnetizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC03D04519A93EF300B29122 /* Debug */,
+				CC03D04619A93EF300B29122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC03D01D19A93EF300B29122 /* Project object */;
+}
