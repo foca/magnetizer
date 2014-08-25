@@ -35,11 +35,7 @@ class TorrentManager {
     // Checks whether the service is available or not by ensuring that we have
     // defined a host for the RPC calls.
     func available() -> Bool {
-        if let url = host {
-            return true
-        } else {
-            return false
-        }
+        return host != nil
     }
 
     // Returns the URL of the web GUI, if available.
