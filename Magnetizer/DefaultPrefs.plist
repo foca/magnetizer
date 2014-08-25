@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>TransmissionHost</key>
-	<string>http://transmission.local</string>
+	<string></string>
 	<key>TransmissionRPCPath</key>
 	<string>/transmission/rpc/</string>
 	<key>TransmissionUsername</key>
-	<string>transmission</string>
+	<string></string>
 	<key>TransmissionPassword</key>
-	<string>home-sweet-home</string>
+	<string></string>
 </dict>
 </plist>
