@@ -14,6 +14,15 @@
 		CC03D03E19A93EF300B29122 /* MagnetizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03D03D19A93EF300B29122 /* MagnetizerTests.swift */; };
 		CC47C94719A9D3B600027E02 /* TorrentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC47C94619A9D3B600027E02 /* TorrentManager.swift */; };
 		CC47CA6D19AA6BCD00027E02 /* DefaultPrefs.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC47CA6C19AA6BCD00027E02 /* DefaultPrefs.plist */; };
+		CCB9531B19B2C59200394C46 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB9530919B2C59200394C46 /* AFHTTPRequestOperation.m */; };
+		CCB9531C19B2C59200394C46 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB9530B19B2C59200394C46 /* AFHTTPRequestOperationManager.m */; };
+		CCB9531D19B2C59200394C46 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB9530D19B2C59200394C46 /* AFHTTPSessionManager.m */; };
+		CCB9531E19B2C59200394C46 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB9531019B2C59200394C46 /* AFNetworkReachabilityManager.m */; };
+		CCB9531F19B2C59200394C46 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB9531219B2C59200394C46 /* AFSecurityPolicy.m */; };
+		CCB9532019B2C59200394C46 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB9531419B2C59200394C46 /* AFURLConnectionOperation.m */; };
+		CCB9532119B2C59200394C46 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB9531619B2C59200394C46 /* AFURLRequestSerialization.m */; };
+		CCB9532219B2C59200394C46 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB9531819B2C59200394C46 /* AFURLResponseSerialization.m */; };
+		CCB9532319B2C59200394C46 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB9531A19B2C59200394C46 /* AFURLSessionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +47,26 @@
 		CC03D03D19A93EF300B29122 /* MagnetizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetizerTests.swift; sourceTree = "<group>"; };
 		CC47C94619A9D3B600027E02 /* TorrentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TorrentManager.swift; path = src/TorrentManager.swift; sourceTree = "<group>"; };
 		CC47CA6C19AA6BCD00027E02 /* DefaultPrefs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultPrefs.plist; sourceTree = "<group>"; };
+		CCB952E519B2BE6700394C46 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		CCB9530819B2C59200394C46 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		CCB9530919B2C59200394C46 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		CCB9530A19B2C59200394C46 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		CCB9530B19B2C59200394C46 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		CCB9530C19B2C59200394C46 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		CCB9530D19B2C59200394C46 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		CCB9530E19B2C59200394C46 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		CCB9530F19B2C59200394C46 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		CCB9531019B2C59200394C46 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		CCB9531119B2C59200394C46 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		CCB9531219B2C59200394C46 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		CCB9531319B2C59200394C46 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		CCB9531419B2C59200394C46 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		CCB9531519B2C59200394C46 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		CCB9531619B2C59200394C46 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		CCB9531719B2C59200394C46 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		CCB9531819B2C59200394C46 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		CCB9531919B2C59200394C46 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		CCB9531A19B2C59200394C46 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +113,7 @@
 				CC03D02E19A93EF300B29122 /* Images.xcassets */,
 				CC03D03019A93EF300B29122 /* MainMenu.xib */,
 				CC03D02819A93EF300B29122 /* Supporting Files */,
+				CCB9530619B2C58800394C46 /* lib */,
 			);
 			path = Magnetizer;
 			sourceTree = "<group>";
@@ -94,6 +124,7 @@
 				CC03D02919A93EF300B29122 /* Info.plist */,
 				CC03D02A19A93EF300B29122 /* main.swift */,
 				CC47CA6C19AA6BCD00027E02 /* DefaultPrefs.plist */,
+				CCB952E519B2BE6700394C46 /* bridge.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -121,6 +152,41 @@
 				CC47C94619A9D3B600027E02 /* TorrentManager.swift */,
 			);
 			name = src;
+			sourceTree = "<group>";
+		};
+		CCB9530619B2C58800394C46 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9530719B2C59200394C46 /* AFNetworking */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		CCB9530719B2C59200394C46 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9530819B2C59200394C46 /* AFHTTPRequestOperation.h */,
+				CCB9530919B2C59200394C46 /* AFHTTPRequestOperation.m */,
+				CCB9530A19B2C59200394C46 /* AFHTTPRequestOperationManager.h */,
+				CCB9530B19B2C59200394C46 /* AFHTTPRequestOperationManager.m */,
+				CCB9530C19B2C59200394C46 /* AFHTTPSessionManager.h */,
+				CCB9530D19B2C59200394C46 /* AFHTTPSessionManager.m */,
+				CCB9530E19B2C59200394C46 /* AFNetworking.h */,
+				CCB9530F19B2C59200394C46 /* AFNetworkReachabilityManager.h */,
+				CCB9531019B2C59200394C46 /* AFNetworkReachabilityManager.m */,
+				CCB9531119B2C59200394C46 /* AFSecurityPolicy.h */,
+				CCB9531219B2C59200394C46 /* AFSecurityPolicy.m */,
+				CCB9531319B2C59200394C46 /* AFURLConnectionOperation.h */,
+				CCB9531419B2C59200394C46 /* AFURLConnectionOperation.m */,
+				CCB9531519B2C59200394C46 /* AFURLRequestSerialization.h */,
+				CCB9531619B2C59200394C46 /* AFURLRequestSerialization.m */,
+				CCB9531719B2C59200394C46 /* AFURLResponseSerialization.h */,
+				CCB9531819B2C59200394C46 /* AFURLResponseSerialization.m */,
+				CCB9531919B2C59200394C46 /* AFURLSessionManager.h */,
+				CCB9531A19B2C59200394C46 /* AFURLSessionManager.m */,
+			);
+			name = AFNetworking;
+			path = lib/AFNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,7 +289,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB9531B19B2C59200394C46 /* AFHTTPRequestOperation.m in Sources */,
 				CC47C94719A9D3B600027E02 /* TorrentManager.swift in Sources */,
+				CCB9531C19B2C59200394C46 /* AFHTTPRequestOperationManager.m in Sources */,
+				CCB9531E19B2C59200394C46 /* AFNetworkReachabilityManager.m in Sources */,
+				CCB9532219B2C59200394C46 /* AFURLResponseSerialization.m in Sources */,
+				CCB9532019B2C59200394C46 /* AFURLConnectionOperation.m in Sources */,
+				CCB9531F19B2C59200394C46 /* AFSecurityPolicy.m in Sources */,
+				CCB9531D19B2C59200394C46 /* AFHTTPSessionManager.m in Sources */,
+				CCB9532119B2C59200394C46 /* AFURLRequestSerialization.m in Sources */,
+				CCB9532319B2C59200394C46 /* AFURLSessionManager.m in Sources */,
 				CC03D02D19A93EF300B29122 /* AppDelegate.swift in Sources */,
 				CC03D02B19A93EF300B29122 /* main.swift in Sources */,
 			);
@@ -344,6 +419,7 @@
 				INFOPLIST_FILE = Magnetizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = Magnetizer/bridge.h;
 			};
 			name = Debug;
 		};
@@ -355,6 +431,7 @@
 				INFOPLIST_FILE = Magnetizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = Magnetizer/bridge.h;
 			};
 			name = Release;
 		};
