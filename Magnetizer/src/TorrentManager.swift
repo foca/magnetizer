@@ -73,6 +73,14 @@ class TorrentManager {
 
             self.request("torrent-add", arguments: ["filename": magnetURL]) { (data, response, error) in
                 NSLog(response.description)
+
+                if response.statusCode == 200 {
+                    var notification = NSUserNotification()
+                    notification.title = "Torrent Added!"
+                    notification.soundName = NSUserNotificationDefaultSoundName
+
+                    NSUserNotificationCenter.defaultUserNotificationCenter().deliverNotification(notification)
+                }
             }
         }
     }
