@@ -10,13 +10,24 @@ import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    let torrents = TorrentManager()
+    let torrents: TorrentManager
 
     @IBOutlet weak var menu: NSMenu!
     @IBOutlet weak var prefWindow: NSWindow!
 
     let statusBar = NSStatusBar.systemStatusBar()
     var statusItem: NSStatusItem?
+
+    override init() {
+        // Set up default values for the user preferences
+        let prefsFile = NSBundle.mainBundle().pathForResource("DefaultPrefs", ofType: "plist")!
+        let defaultPreferences = NSDictionary(contentsOfFile: prefsFile)
+        NSUserDefaults.standardUserDefaults().registerDefaults(defaultPreferences)
+
+        self.torrents = TorrentManager()
+
+        super.init()
+    }
 
     override func awakeFromNib() {
         statusItem = statusBar.statusItemWithLength(-1)
@@ -36,7 +47,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func openRemoteGUI(AnyObject) {
-        if let hostURL = torrents.guiURL() {
+        if let hostURL = self.torrents.guiURL() {
             NSWorkspace.sharedWorkspace().openURL(hostURL)
         }
     }
@@ -58,17 +69,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             forEventClass: AEEventClass(kInternetEventClass),
             andEventID: AEEventID(kAEGetURL)
         )
-
-        // Set up default values for the user preferences
-        let prefsFile = NSBundle.mainBundle().pathForResource("DefaultPrefs", ofType: "plist")!
-        let defaultPreferences = NSDictionary(contentsOfFile: prefsFile)
-        NSUserDefaults.standardUserDefaults().registerDefaults(defaultPreferences)
     }
 
     func handleURLEvent(event: NSAppleEventDescriptor, withReplyEvent: NSAppleEventDescriptor) {
-        let url = NSURL.URLWithString(
-            event.paramDescriptorForKeyword(AEKeyword(keyDirectObject))!.stringValue!
-        )
-        torrents.add(url)
+        let url = event.paramDescriptorForKeyword(AEKeyword(keyDirectObject))!.stringValue!
+        self.torrents.add(url)
     }
 }
